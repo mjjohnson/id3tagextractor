@@ -1,0 +1,13 @@
+id3tagextract.py scans a target directory (or entire tree) and outputs an XML file containing all of the ID3 tags of each file in the directory.  It depends on Mutagen, which can be obtained from their Google Code page: http://code.google.com/p/quodlibet/wiki/Mutagen
+
+This script is tested and working on Linux and Windows XP with Python 2.5 and 2.6 respectively, and Mutagen 1.16.
+
+The code is fairly short and I've tried to include clear comments explaining my purpose.  You can also see usage and available options by adding --help at the command line.
+
+Thre are a few extra tidbits of information that you may find helpful.  First is an explanation of the ID3 frame abbreviations.  These are four-letter codes compiled from id3.org that specify a tag.  For instance, TIT2 is the song's title, and TRCK is the track number.  The full list is found in ID3v2.4-frames.txt, which was included along with this file.
+
+The other thing you might like to know is how the XML output is structured.  I didn't bother to create a document type definition (DTD), since this was mainly intended for my own personal use anyway.  However, I've included a sample XML output file so that you can see how they will be structured.  This is called example.xml and should also have been bundled with this file.
+
+For more information, see www.chippedprism.com and my contact form there.
+
+Copyright 2009 Michael Johnson
